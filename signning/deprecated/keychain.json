@@ -1,0 +1,10 @@
+{
+    "name": "x3.keychain",     
+    "password": "123456",      
+    "p12s": [                  
+        {
+            "name": "x3.p12",      
+            "password": "x3.p12" 
+        }
+    ]
+}

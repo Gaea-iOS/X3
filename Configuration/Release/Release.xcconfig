@@ -1,0 +1,17 @@
+//
+//  Release.xcconfig
+//  X3
+//
+//  Created by 王小涛 on 2020/2/12.
+//  Copyright © 2020 王小涛. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+BundleDisplayName = 汇丰科技
+BundleIdentifier = cn.com.hsbcchina.tech
+
+BundleShortVersion = 2.30.0
+
+APIDomain = www.baidu.com
