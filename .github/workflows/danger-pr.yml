@@ -1,7 +1,7 @@
 name: Danger-PR
 
 on:
-  pull_request:
+  push:
     branches:
       - master
       - develop
