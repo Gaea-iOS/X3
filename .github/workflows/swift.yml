@@ -1,6 +1,12 @@
 name: Swift
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
+      - develop
+      - feature/*
+      - release/*
 
 jobs:
   build:
@@ -9,7 +15,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Build
-      run: swift build -v
     - name: Run tests
-      run: swift test -v
+      run: xcodebuild build test -destination 'name=iPhone 11' -scheme 'X3'
+
+
