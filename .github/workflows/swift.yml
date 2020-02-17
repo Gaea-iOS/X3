@@ -15,7 +15,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Run tests
-      run: xcodebuild build test -destination 'name=iPhone 11' -scheme 'X3'
+    - uses: actions/setup-python@v2
+      with:
+        python-version: '3.7'
+    - name: Run python for test
+      run: python ./scripts/test.py
 
 
