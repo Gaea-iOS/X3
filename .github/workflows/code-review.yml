@@ -12,6 +12,12 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 10.x
+
+      - name: npm install
+        run: |
+          npm install
+        env:
+          CI: true
     
       - name: Danger JS Action
         uses: danger/danger-js@9.1.8
