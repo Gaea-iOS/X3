@@ -1,0 +1,19 @@
+name: Danger-Test
+
+on:
+  push:
+    branches:
+      - master
+      - develop
+      - feature/*
+      - release/*
+
+jobs:
+  danger:
+
+    runs-on: macOS-latest
+    
+    steps:
+    - name: Danger JS Action
+      uses: danger/danger-js@9.1.8
+      args: --dangerfile ./Dangerfile.js
