@@ -1,7 +1,7 @@
 #!/bin/sh -l
 
 # Install danger cli on the machine
-yarn add danger --dev
+yarn global add danger
 
 # install needed dependencies
 yarn
