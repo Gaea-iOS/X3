@@ -1,10 +1,9 @@
 #!/bin/sh -l
 
 # Install danger cli on the machine
-yarn global add danger
+yarn add danger --dev
 
-# install needed dependencies
-yarn
+yarn danger init
 
 # Run danger
 danger --dangerfile "./" ci
