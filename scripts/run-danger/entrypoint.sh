@@ -4,7 +4,6 @@
 yarn global add danger --dev
 
 # install needed dependencies
-yarn
 
 # Run danger
 danger --dangerfile "./" ci
