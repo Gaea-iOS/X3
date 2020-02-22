@@ -1,8 +1,8 @@
 #!/bin/sh -l
 
-sudo npm cache clean -f
-sudo npm install -g n
-sudo n stable
+npm cache clean -f
+npm install -g n
+n stable
 
 # Install danger cli on the machine
 yarn add danger --dev
