@@ -18,6 +18,9 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Danger JS Action
-      uses: ./scripts/run-danger/
-      env:
-        GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+      uses: danger/danger-js@9.1.8
+
+    # - name: Danger JS Action
+    #   uses: ./scripts/run-danger/
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
