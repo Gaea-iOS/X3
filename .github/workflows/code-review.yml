@@ -22,6 +22,6 @@ jobs:
           CI: true
     
       - name: Danger JS Action
-        uses: danger/danger-js@9.1.8
+        uses: danger/danger-js@9.2.3
         env:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
