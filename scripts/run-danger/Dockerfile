@@ -1,4 +1,4 @@
-FROM node:8
+FROM node:12
 
 LABEL "com.github.actions.name"="dangerjs"
 LABEL "com.github.actions.description"="run dangerjs pr checks"
