@@ -1,3 +1,3 @@
-import {message } from danger
+import {message} from "danger"
 
-message("hello word")
+message("Test pass!")
