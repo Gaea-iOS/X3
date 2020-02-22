@@ -1,5 +1,5 @@
 workflow "Dangerfile JS Eval" {
-  on = "pull_request"
+  on = "push"
   resolves = "Danger JS"
 }
 action "Danger JS" {
