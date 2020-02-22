@@ -14,12 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-      
     - name: Danger JS Action
-      uses: danger/danger-js@9.1.8
-      with:
-        args: --dangerfile ./Dangerfile.js
+      uses: ./scripts/run-danger/
       env:
         GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
