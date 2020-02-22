@@ -1,7 +1,7 @@
 name: Danger-Test
 
 on:
-  push:
+  pull_request:
     branches:
       - master
       - develop
@@ -16,7 +16,7 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
-      
+
     - name: Danger JS Action
       uses: ./scripts/run-danger/
       env:

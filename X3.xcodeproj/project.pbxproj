@@ -171,10 +171,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1BA42C2C23F41CBF0073A423 /* Build configuration list for PBXNativeTarget "X3" */;
 			buildPhases = (
+				1BA42CEF23F45DC70073A423 /* ShellScript */,
 				1BA42BFE23F41CBC0073A423 /* Sources */,
 				1BA42BFF23F41CBC0073A423 /* Frameworks */,
 				1BA42C0023F41CBC0073A423 /* Resources */,
-				1BA42CEF23F45DC70073A423 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -309,7 +309,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n./scripts/run-scripts.sh\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n./scripts/run-scripts.sh\n\ncd BuildTools\nswift run -c release swiftformat \"$SRCROOT\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -491,7 +491,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development: taoli zheng (KNPJFG8XBK)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = "";
+				CURRENT_PROJECT_VERSION = 20200222121535;
 				DEVELOPMENT_ASSET_PATHS = "\"X3/Preview Content\"";
 				DEVELOPMENT_TEAM = 3P8FAFCTA3;
 				ENABLE_PREVIEWS = YES;
@@ -506,6 +506,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = x3;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -516,7 +517,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development: taoli zheng (KNPJFG8XBK)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = "";
+				CURRENT_PROJECT_VERSION = 20200222121535;
 				DEVELOPMENT_ASSET_PATHS = "\"X3/Preview Content\"";
 				DEVELOPMENT_TEAM = 3P8FAFCTA3;
 				ENABLE_PREVIEWS = YES;
@@ -531,6 +532,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = x3;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
