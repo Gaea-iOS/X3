@@ -14,7 +14,6 @@ jobs:
     runs-on: macOS-latest
     
     steps:
-    - name: Danger JS Action
-      uses: danger/danger-js@9.1.8
-      with:
-        args: --dangerfile ./Dangerfile.js
+    - name: Danger Swift
+    uses: danger/swift@2.0.3
+      run: danger-swift ci
