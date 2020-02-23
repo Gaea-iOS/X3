@@ -1,3 +1,3 @@
 import {message} from "danger"
 
-message("Test pass!")
+message("hello world!")
