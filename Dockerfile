@@ -1,9 +1,8 @@
 FROM node:12
 
-LABEL "com.github.actions.name"="dangerjs"
-LABEL "com.github.actions.description"="run dangerjs pr checks"
-LABEL "com.github.actions.icon"="mic"
-LABEL "com.github.actions.color"="purple"
+RUN buildDeps='npm install --save-dev @babel/plugin-transform-flow-strip-types' \
+    npm install --save-dev @babel/core \
+    npm install --save-dev danger &buildDeps
 
 ADD entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
