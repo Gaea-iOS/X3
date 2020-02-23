@@ -1,6 +1,6 @@
 #!/bin/sh -l
 
-which danger
+echo $(which danger)
 
 # Run danger
 danger --dangerfile "./" ci
