@@ -15,3 +15,5 @@ BundleIdentifier = cn.com.hsbcchina.tech
 BundleShortVersion = 2.30.0
 
 APIDomain = www.baidu.com
+
+PRODUCT_NAME = $(inherited) α
